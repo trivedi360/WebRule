@@ -27,7 +27,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #fff;  
+  background-color:#fff;  
   z-index: 100;
   padding: 0 2rem;
 }
@@ -220,3 +220,167 @@ body {
     padding: 1rem;
   }
 }
+
+
+/************* Contact Us *****************/
+
+.parent{
+   width: 100%;
+   height: 90vh;
+   display: flex;
+   flex-direction: column;
+   justify-content:start;
+   align-items: center;
+}
+.large-font{
+  font-size: 32px;
+  margin:50px 0px 50px 0px;
+}
+.contact-form {
+  width:20%;
+  justify-content:space-around;
+  flex-direction: column;
+  background-color: #ffffff;
+  box-shadow:4px 4px 12px rgba(12, 159, 227, 0.25);
+  padding:50px;
+  border: 1px solid #ddd; 
+  border-radius: 8px;
+  margin: 15px;
+}
+
+.form-item input:focus {
+  border-color: #315c8a;
+}
+
+/* Placeholder for spacing */
+.form-item input::placeholder {
+  color: transparent; /* Hide placeholder text */
+}
+
+.form-item{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  margin-bottom: 15px;
+  position: relative;
+  padding: 10px;
+}
+
+
+
+.label-for{
+  position: absolute;
+  left: 10px;
+  font-size: 16px;
+  color: #0774a7;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  transform: translateY(-50%);
+  font-weight: 600;
+  letter-spacing: 0.5;
+}
+
+.form-item input{
+  border: none;
+  border-bottom:2px solid #ddd;
+  outline: none;
+  width:100%;
+}
+.form-item input:focus + .label-for,
+.form-item input:not(:placeholder-shown) + .label-for {
+    top: 0;
+    font-size: 14px;
+    color: #0774a7;
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+
+
+.form-item textarea{
+  border:1px solid #ddd;
+  outline: none;
+  padding:15px 15px;
+  width:97%;
+  height: 7rem;
+  border-radius: 10px;
+  color: #706c6c;
+  font-weight: 600;
+  box-shadow:4px 4px 12px rgba(12, 159, 227, 0.25);
+}
+
+.btn-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  position: relative;
+  color: #5B6E80;
+}
+
+
+.btn-item button{
+  color: #fff;
+  background-color:rgb(13, 153, 217);
+  padding: 10px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  width: 100%;
+  font-weight: 700;
+  cursor: pointer;
+}
+.btn-item button:hover{
+  background-color: rgb(15, 160, 227);
+  opacity: 0.9;
+  transition: 0.3s;
+}
+
+/****************TechStack***************/
+.techstack-section{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.techstack-main{
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 2fr));
+  gap: 20px;
+  place-items: center;
+}
+
+
+
+.techstack{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow:4px 4px 12px rgba(12, 159, 227, 0.25);
+  width:10rem;
+  height:10rem;
+  border-radius:10px;
+  text-align: center;
+}
+
+.techstack-item img{
+  width: 4rem;
+  height: 4rem;
+  object-fit:cover;
+}
+
+.techstack h4{
+  margin:15px 0px 0px 0px;
+}
+
+.techstack-section h1{
+  margin: 40px 0px 70px 0px; 
+}
+
+
+
+
