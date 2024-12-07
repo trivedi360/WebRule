@@ -22,4 +22,4 @@ const ServicesItem = ({image, title, description, isReverse}) => {
         </>
     );
 }
-export default ServicesItem
+export default ServicesItem;
