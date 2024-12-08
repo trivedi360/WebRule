@@ -1,7 +1,7 @@
 import PromiseItem from "./PromiseItem";
 
 
-const Promise = () => {
+const Promise = ({scroll}) => {
     const promise = [
         {
             image: "/image/projectA.png",
@@ -32,7 +32,7 @@ const Promise = () => {
     ];
     return(
         <>
-        <section className="promise-container">
+        <section className={`promise-container ${scroll}`}>
             <h2>Projects</h2>
             <div className="promise-item">
             {promise.map((pro, index ) =>(

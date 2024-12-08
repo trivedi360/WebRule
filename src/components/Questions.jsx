@@ -1,6 +1,6 @@
 import FQA from "./FQA";
 
-const Questions = () => {
+const Questions = ({scroll}) => {
 
     const questions = [
         {
@@ -31,7 +31,7 @@ const Questions = () => {
 
     return (
         <>
-            <section className="questions-content">
+            <section className={`questions-content pattern.bg ${scroll}`}>
                     <h2 className="question-heading large-font">Frequently asked questions</h2>
 
                     {questions.map((question, index) => (
