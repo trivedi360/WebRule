@@ -3,6 +3,7 @@ const PromiseItem = ({ image, name, detail }) => {
     return (
         <>
 
+
                 <div className="promise-card">
                     <div className="promise-img">
                         <img src={image} alt={name} />

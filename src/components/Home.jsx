@@ -1,8 +1,8 @@
 
-const Home = () => {
+const Home = ({scroll}) => {
     return(
         <>
-        <div className="home">
+        <div className={`home ${scroll}`}>
             <div className="home-intro">
                 <p className="home-intro-image small-font"> " Hi there, I'm Ruben "
                     <img src="/image/hi.png"/> </p>
