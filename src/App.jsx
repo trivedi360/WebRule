@@ -21,11 +21,10 @@ function App() {
       <Home scroll="fade-in"/>
       <Services scroll="fade-in"></Services>
       <Promise scroll="fade-in"></Promise>
-      <TechStack></TechStack>
+      <TechStack scroll="fade-in"></TechStack>
       <Questions scroll="fade-in"></Questions>
-      <ContactUs></ContactUs>
-      <Footer/>
-
+      <ContactUs scroll="fade-in"></ContactUs>
+      <Footer scroll="fade-in"></Footer>
     </>
   )
 }

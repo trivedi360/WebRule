@@ -1,6 +1,6 @@
-const Footer = () => {
+const Footer = ({scroll}) => {
     return (
-        <div className="footer">
+        <div className= {`footer ${scroll}`}>
             <div className="footer-top">
                 <div className="footer-left">
                     <div className="footer-company">
